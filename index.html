@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>শিক্ষা সহায়ক | Notes • Q&A • MCQ</title>
+  <meta name="description" content="ক্লাসভিত্তিক নোটস, প্রশ্নোত্তর, MCQ ও শিক্ষামূলক উপকরণ।">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#"><span>🎓</span> শিক্ষা সহায়ক</a>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="navMenu">
+      <a href="#home">হোম</a>
+      <a href="#classes">ক্লাস</a>
+      <a href="#resources">নোটস</a>
+      <a href="#quiz">MCQ</a>
+      <a href="#pdf">PDF</a>
+      <a href="#contact">যোগাযোগ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="pill">📚 Notes • Question Answer • MCQ</span>
+      <h1>সহজভাবে পড়ুন,<br><strong>নিজের প্রস্তুতি নিজেই নিন</strong></h1>
+      <p>ক্লাসভিত্তিক নোটস, অধ্যায়ভিত্তিক প্রশ্নোত্তর, MCQ এবং পরীক্ষার প্রস্তুতির উপকরণ এক জায়গায়।</p>
+      <div class="searchbox">
+        <input id="searchInput" type="search" placeholder="প্রশ্ন, বিষয় বা অধ্যায় খুঁজুন..." oninput="searchContent()">
+        <button onclick="searchContent()">🔎 খুঁজুন</button>
+      </div>
+      <div id="searchResults" class="search-results"></div>
+    </div>
+    <div class="hero-card">
+      <div class="book">📖</div>
+      <h3>আজকের পড়াশোনা</h3>
+      <p>একটি অধ্যায় পড়ুন, ১০টি MCQ দিন এবং নিজের প্রস্তুতি যাচাই করুন।</p>
+      <a class="btn" href="#classes">ক্লাস বেছে নিন →</a>
+    </div>
+  </div>
+</section>
+
+<section id="classes" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">CLASS</span><h2>আপনার ক্লাস নির্বাচন করুন</h2></div>
+      <p>ক্লাস নির্বাচন করলে সংশ্লিষ্ট বিষয়গুলো দেখুন।</p>
+    </div>
+    <div id="classGrid" class="class-grid"></div>
+  </div>
+</section>
+
+<section id="resources" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">RESOURCES</span><h2>শিক্ষামূলক উপকরণ</h2></div>
+    </div>
+    <div class="resource-grid">
+      <article class="resource"><span>📖</span><h3>Class Notes</h3><p>অধ্যায়ভিত্তিক সহজ নোটস ও গুরুত্বপূর্ণ বিষয়।</p></article>
+      <article class="resource"><span>❓</span><h3>প্রশ্ন ও উত্তর</h3><p>Short ও Long Question-এর অনুশীলন।</p></article>
+      <article class="resource"><span>☑️</span><h3>MCQ Practice</h3><p>বিষয়ভিত্তিক MCQ দিয়ে নিজেকে যাচাই করুন।</p></article>
+      <article class="resource"><span>📄</span><h3>PDF</h3><p>নোটস ও মডেল প্রশ্নপত্র ডাউনলোডের ব্যবস্থা।</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="quiz" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">QUIZ</span><h2>দ্রুত MCQ পরীক্ষা</h2></div>
+    </div>
+    <div class="quiz-card" id="quizBox">
+      <p class="muted">প্রস্তুত তো? নিচের বাটনে ক্লিক করে Quiz শুরু করুন।</p>
+      <button class="btn" onclick="startQuiz()">Quiz শুরু করুন</button>
+    </div>
+  </div>
+</section>
+
+<section id="pdf" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">PDF</span><h2>PDF ও মডেল প্রশ্ন</h2></div>
+    </div>
+    <div class="pdf-box">
+      <div><span>📥</span><div><h3>PDF Library</h3><p>এখানে আপনার Notes PDF, Model Question Paper ও Suggestion-এর Download link যোগ করতে পারবেন।</p></div></div>
+      <p class="hint">Admin অংশে PDF-এর URL বসালে এই সেকশনটি পরে স্বয়ংক্রিয়ভাবে তালিকা দেখাতে পারবে।</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container contact">
+    <div><span class="eyebrow">CONTACT</span><h2>যোগাযোগ</h2><p>শিক্ষামূলক বিষয়বস্তু, ভুল সংশোধন বা পরামর্শের জন্য যোগাযোগ করুন।</p></div>
+    <div class="contact-card"><p>📧 Email: your@email.com</p><p>📱 WhatsApp: +91 XXXXX XXXXX</p></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container"><strong>🎓 শিক্ষা সহায়ক</strong><span>© <span id="year"></span> All Rights Reserved.</span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
